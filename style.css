@@ -19,6 +19,13 @@ body {
   gap: 1rem; /* space between clock and button */
 }
 
+#clock-title {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
 
 #toggle-mode {
   margin-top: 10px;
@@ -138,7 +145,7 @@ body {
 }
 
 .clock .hand.second {
-  width: 3px;
+  width: 5px;
   height: 45%;
   background-color: red;
 }

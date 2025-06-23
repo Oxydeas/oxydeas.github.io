@@ -3,6 +3,7 @@ const minuteHand = document.querySelector('[data-minute-hand]')
 const secondHand = document.querySelector('[data-second-hand]')
 const toggleButton = document.getElementById('toggle-mode')
 const clock = document.querySelector('.clock')
+const title = document.getElementById('clock-title')
 
 let lastSecond = -1
 
@@ -38,6 +39,7 @@ function setRotation(element, rotationRatio) {
 toggleButton.addEventListener('click', () => {
   const isBlack = clock.classList.toggle('black-mode')
   toggleButton.textContent = isBlack ? 'Aller' : 'Retour'
+  title.textContent = isBlack ? 'Horaire retour' : 'Horaire aller'
 })
 
 setInterval(setClock, 1000)
